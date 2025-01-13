@@ -13,7 +13,7 @@ Backend Engineering Launchpad Cohort 10
 3. Create a system to track patron borrowing history.
 
 #### * Lending Process
-  Implement book checkout and return functionalities.
+    Implement book checkout and return functionalities.
 
 #### * Inventory Management
-  Keep track of available and borrowed books.
+    Keep track of available and borrowed books.
