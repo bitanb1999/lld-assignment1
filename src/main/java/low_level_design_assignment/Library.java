@@ -1,10 +1,10 @@
+package low_level_design_assignment;
 import java.util.*;
 
 public class Library {
     private String name;
     private Address address;
     private List<Book> books;
-    private List<Author> authors;
     private List<Patron> patrons;
     private Librarian librarian;
 
@@ -12,7 +12,6 @@ public class Library {
         this.name = name;
         this.address = address;
         this.books = new ArrayList<>();
-        this.authors = new ArrayList<>();
         this.patrons = new ArrayList<>();
         this.librarian = librarian;
     }
@@ -42,14 +41,6 @@ public class Library {
         this.books = books;
     }
 
-    public List<Author> getAuthors() {
-        return authors;
-    }
-
-    public void setAuthors(List<Author> authors) {
-        this.authors = authors;
-    }
-
     public List<Patron> getPatrons() {
         return patrons;
     }
@@ -70,12 +61,6 @@ public class Library {
     public void addBook(Book book) {
         books.add(book);
     }
-
-    // Add a new author to the library
-    public void addAuthor(Author author) {
-        authors.add(author);
-    }
-
     // Add a new patron to the library
     public void addPatron(Patron patron) {
         patrons.add(patron);
@@ -86,37 +71,5 @@ public class Library {
     public void removePatron(Patron patron) {
         patrons.remove(patron);
         librarian.removeAccountForPatron(patron);
-    }
-
-    // Find a book by its ISBN
-    public Book findBookByISBN(String isbn) {
-        for (Book book : books) {
-            if (book.getISBN().equals(isbn)) {
-                return book;
-            }
-        }
-        return null;
-    }
-
-    // Find books by author name
-    public List<Book> findBooksByAuthor(String authorName) {
-        List<Book> result = new ArrayList<>();
-        for (Book book : books) {
-            if (book.getAuthor().getName().equalsIgnoreCase(authorName)) {
-                result.add(book);
-            }
-        }
-        return result;
-    }
-
-    // Find books by title
-    public List<Book> findBooksByTitle(String title) {
-        List<Book> result = new ArrayList<>();
-        for (Book book : books) {
-            if (book.getTitle().equalsIgnoreCase(title)) {
-                result.add(book);
-            }
-        }
-        return result;
     }
 }
