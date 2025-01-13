@@ -9,11 +9,20 @@ public class Librarian extends Account {
         // Implementation for adding a book item
     }
 
-    public void blockMember(Patron member) {
+    public void blockMember(Patron patron) {
         // Implementation for blocking a member
     }
 
-    public void unblockMember(Patron member) {
+    public void unblockMember(Patron patron) {
         // Implementation for unblocking a member
+    }
+    public void createAccountForPatron(Patron patron) {
+        // Implementation for creating an account for a patron
+        System.out.println("Account created for patron: " + patron.getId());
+    }
+
+    public void removeAccountForPatron(Patron patron) {
+        // Implementation for removing an account for a patron
+        System.out.println("Account removed for patron: " + patron.getId());
     }
 }
