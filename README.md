@@ -22,3 +22,17 @@ Backend Engineering Launchpad Cohort 10
 The LLD-design imagined is as shown in the image
 ![LLDAssignment drawio](https://github.com/user-attachments/assets/2e07cf73-93b5-405f-8244-f8ba44575c22)
 
+
+The requirements as identified are:
+* Actors:
+  - Librarian
+  - Patrons
+  - Books
+* Requirements from the Library system
+  - To add, remove or modify a book item which is essentially multiple copies of a book.
+  - To have a search system that can be used to search for books 
+  - To add a new patron or cancel the membership of an existing one.
+  - checkout, renew, reserve or return a book.
+  - calculate fine if delayed return
+  - send return or reservation notifications
+
