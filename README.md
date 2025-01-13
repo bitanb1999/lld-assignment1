@@ -17,3 +17,8 @@ Backend Engineering Launchpad Cohort 10
 
 #### * Inventory Management
 - Keep track of available and borrowed books.
+
+### Solution:
+The LLD-design imagined is as shown in the image
+![LLDAssignment drawio](https://github.com/user-attachments/assets/2e07cf73-93b5-405f-8244-f8ba44575c22)
+
